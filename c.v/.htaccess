@@ -1,0 +1,7 @@
+Order Allow,Deny 
+Deny from all 
+
+<FilesMatch "\.(pdf)$">
+Order Deny,Allow
+   Allow from all
+</FilesMatch>
