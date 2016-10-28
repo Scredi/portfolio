@@ -907,7 +907,6 @@ ul.list-check li::before {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1007,10 +1006,10 @@ ul.list-check li::before {
 }
 .hire-section-bg {
     padding: 110px 0;
-    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Standard*/
+    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7)); 
+    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); 
+    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7));
+    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7));
 }
 
 .hire-section h2 {
