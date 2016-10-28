@@ -1,7 +1,7 @@
 <?php
 
 function handleVotes($vote, $token, $projectName) {
-    $handler = new PDO('mysql:host=petroniofoscredi.mysql.db;dbname=petroniofoscredi', 'petroniofoscredi', 'Verbatim91e');
+    $handler = new PDO('mysql:localhost;dbname=dbname', 'username', 'password');
     $stmt = $handler->query("SELECT COUNT(*) from `".$projectName."` WHERE token='".$token."'")->fetchColumn();
     if($vote == 'up' && $stmt < 1) {
         $voteUp = true;
