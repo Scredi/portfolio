@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 - Install Vagrant (https://www.vagrantup.com)
 - For windows add this line at the end of your hosts file in admin mode (C:\Windows\System32\drivers\etc) : 127.0.0.1	petronio-maxime.dev
