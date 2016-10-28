@@ -1,13 +1,12 @@
 <?php
 
-    // Email address verification
     function isEmail($email) {
         return filter_var($email, FILTER_VALIDATE_EMAIL);
     }
 
     if($_POST) {
 
-        $emailTo = 'm.petronio91@gmail.com';
+        $emailTo = 'votreadresse@mail.com';
 
         $clientName = addslashes(trim($_POST['name']));
         $clientEmail = addslashes(trim($_POST['email']));
@@ -39,7 +38,6 @@
             $errors['errorSpam'] = 'Réponse incorrecte !';
         }
         if($clientName != '' && isEmail($clientEmail) && $subject != '' && $message != '' && $antispam == '12') {
-            // Send email
             $headers = "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
             mail($emailTo, $subject, $message, $headers);
         }
