@@ -1,6 +1,6 @@
 <?php
 
-$handler = new PDO('mysql:host=petroniofoscredi.mysql.db;dbname=petroniofoscredi', 'petroniofoscredi', 'Verbatim91e');
+$handler = new PDO('mysql:host=localhost;dbname=dbname', 'username', 'password');
 $stmt = $handler->query("SELECT
                           (SELECT COUNT(*) FROM `compta-free` WHERE voteUp=1) AS comptaVoteUp,
                           (SELECT COUNT(*) FROM `compta-free` WHERE voteDown=1) AS comptaVoteDown,
