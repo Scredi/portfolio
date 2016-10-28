@@ -1,0 +1,4 @@
+RewriteEngine on
+
+Rewritecond %{HTTP_HOST} ^petronio-maxime.fr$
+Rewriterule ^(.*) http://www.petronio-maxime.fr/$1 [QSA,L,R=301]
